@@ -1,3 +1,8 @@
+Visually compare data in MySQL
+
+
+Compare the data of two tables in the database to identify differences
+
 1.此项目支持对比源端数据源和目标数据源之间的数据对比，可以得出两个数据源中数据的more、less和diff，当前已支持mysql
 
 
