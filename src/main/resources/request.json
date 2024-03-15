@@ -1,0 +1,30 @@
+{
+  "taskId": 1,
+  "source":{
+    "user":"root",
+    "password":"root",
+    "url":"jdbc:mysql://localhost:3306/test_target",
+    "tableName":"user_info2",
+    "encryptColumns":[
+      {
+        "columnName":"name",
+        "encryptType":"XSM4",
+        "encryptKey": "5d7cf9ff0594320a7be6f45aef264ee8",
+        "targetColumnName": "name_source"
+      }
+    ]
+  },
+  "target":{
+    "user":"root",
+    "password":"root",
+    "url":"jdbc:mysql://localhost:3306/test_target",
+    "tableName":"user_info3"
+  },
+  "compareKeys":["id"],
+  "columnMapping":{
+    "id":"id",
+    "name":"name",
+    "name_source":"name_source",
+    "name_like":"name_like"
+  }
+}
